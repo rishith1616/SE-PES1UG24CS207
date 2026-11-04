@@ -1,0 +1,22 @@
+==============================================================================
+BRANCH COVERAGE REPORT (BranchCoverageTest_food_delivery.py)
+==============================================================================
+
+Command: coverage run --branch -m pytest BranchCoverageTest_food_delivery.py
+Report: coverage report -m
+
+============================= test session starts =============================
+platform win32 -- Python 3.10.11, pytest-9.2.0, pluggy-1.7.0
+rootdir: C:\Users\Rishith\SE-PES1UG24CS207\LAB 06
+collected 32 items
+
+BranchCoverageTest_food_delivery.py ................................     [100%]
+
+============================== 32 passed in 0.07s ==============================
+
+Name                                  Stmts   Miss Branch BrPart  Cover   Missing
+---------------------------------------------------------------------------------
+BranchCoverageTest_food_delivery.py      77      0      0      0   100%
+food_delivery.py                         33      0     24      0   100%
+---------------------------------------------------------------------------------
+TOTAL                                   110      0     24      0   100%
