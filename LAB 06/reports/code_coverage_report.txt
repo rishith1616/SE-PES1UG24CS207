@@ -1,0 +1,22 @@
+==============================================================================
+CODE (LINE) COVERAGE REPORT (CodeCoverageTest_food_delivery.py)
+==============================================================================
+
+Command: coverage run -m pytest CodeCoverageTest_food_delivery.py
+Report: coverage report -m
+
+============================= test session starts =============================
+platform win32 -- Python 3.10.11, pytest-9.2.0, pluggy-1.7.0
+rootdir: C:\Users\Rishith\SE-PES1UG24CS207\LAB 06
+collected 18 items
+
+CodeCoverageTest_food_delivery.py ..................                     [100%]
+
+============================== 18 passed in 0.05s ==============================
+
+Name                                Stmts   Miss  Cover   Missing
+-----------------------------------------------------------------
+CodeCoverageTest_food_delivery.py      46      0   100%
+food_delivery.py                       33      0   100%
+-----------------------------------------------------------------
+TOTAL                                  79      0   100%

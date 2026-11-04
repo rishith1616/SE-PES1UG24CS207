@@ -1,0 +1,40 @@
+==============================================================================
+INITIAL CODE AND BRANCH COVERAGE REPORT (Starter test_food_delivery.py)
+==============================================================================
+
+Command: coverage run -m pytest test_food_delivery.py
+Report: coverage report -m
+
+============================= test session starts =============================
+platform win32 -- Python 3.10.11, pytest-9.2.0, pluggy-1.7.0
+rootdir: C:\Users\Rishith\SE-PES1UG24CS207\LAB 06
+collected 2 items
+
+test_food_delivery.py ..                                                 [100%]
+
+============================== 2 passed in 0.04s ==============================
+Name                    Stmts   Miss  Cover   Missing
+-----------------------------------------------------
+food_delivery.py           33     21    36%   6, 8, 11-14, 16, 23-29, 33-40
+test_food_delivery.py       6      0   100%
+-----------------------------------------------------
+TOTAL                      39     21    46%
+
+
+Command: coverage run --branch -m pytest test_food_delivery.py
+Report: coverage report -m
+
+============================= test session starts =============================
+platform win32 -- Python 3.10.11, pytest-9.2.0, pluggy-1.7.0
+rootdir: C:\Users\Rishith\SE-PES1UG24CS207\LAB 06
+collected 2 items
+
+test_food_delivery.py ..                                                 [100%]
+
+============================== 2 passed in 0.03s ==============================
+Name                    Stmts   Miss Branch BrPart  Cover   Missing
+-------------------------------------------------------------------
+food_delivery.py           33     21     24      5    30%   6, 8, 11-14, 16, 23-29, 33-40
+test_food_delivery.py       6      0      0      0   100%
+-------------------------------------------------------------------
+TOTAL                      39     21     24      5    37%
