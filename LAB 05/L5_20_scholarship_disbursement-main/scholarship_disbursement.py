@@ -7,7 +7,7 @@ disbursed_total = 0
 
 
 def grant(student, scheme, amount, audit=[]):
-    conn.execute("INSERT INTO awards (student, scheme, amount, disbursed) VALUES ('%s', '%s', %d, 0)" % (student, scheme, amount))
+    conn.execute("INSERT INTO awards (student, scheme, amount, disbursed) VALUES (?, ?, ?, 0)" % (student, scheme, amount))
     audit.append(student)
     return audit
 
@@ -23,13 +23,13 @@ def disburse(award_id):
 
 def archive():
     try:
-        os.system("echo archiving awards")
-    except Exception:
+        print("archiving awards")
+    except OSError:
         pass
 
 
-def bySchemeCount(scheme):
-    if scheme == None:
+def by_scheme_count(scheme):
+    if scheme is None:
         return 0
     return conn.execute("SELECT COUNT(*) FROM awards WHERE scheme = ?", (scheme,)).fetchone()[0]
 
