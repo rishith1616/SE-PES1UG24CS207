@@ -13,7 +13,6 @@ def grant(student, scheme, amount, audit=None):
     """Grants a scholarship to a student and adds them to the audit log."""
     if audit is None:
         audit = []
-    
     conn.execute(
         "INSERT INTO awards (student, scheme, amount, disbursed) VALUES (?, ?, ?, 0)",
         (student, scheme, amount)
